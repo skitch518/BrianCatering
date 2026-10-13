@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | Brian's Southern Catering in Colombia SC</title>
+  <meta name="description" content="Sample catering menu from [Business Name] in [City, State]. Custom menus available for every event.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header solid">
+    <a class="logo" href="index.html">Brian's Southern Catering</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Sample Menu</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Add background images with: <div class="slide-img" style="background:url('images/dish1.jpg') center/cover"></div> -->
+          <div class="swiper-slide">
+            <div class="slide-img" style="background:url('images/fried_chicken.png') center/cover"></div>
+            <div class="slide-overlay"><h3>Fried Chicken</h3><p>[Short description]</p></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-img">Photo</div>
+            <div class="slide-overlay"><h3>[Dish Name]</h3><p>[Short description]</p></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-img">Photo</div>
+            <div class="slide-overlay"><h3>[Dish Name]</h3><p>[Short description]</p></div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <p style="text-align:center;margin-top:2rem;">Custom menus available. <a href="contact.html">Request a quote</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Brian's Southern Catering &middot; Colombia, SC &middot; [Phone] &middot; [Email]
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+  new Swiper('.swiper', {
+    slidesPerView: 1.4,
+    centeredSlides: true,
+    spaceBetween: 20,
+    loop: false,
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
+  });
+</script>
+</body>
+</html>

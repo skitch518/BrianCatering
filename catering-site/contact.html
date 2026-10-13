@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Quote | Brian's Southern Catering Catering in Colombia, SC</title>
+  <meta name="description" content="Request a catering quote from Brian's Southern Catering in Colombia, SC.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header solid">
+    <a class="logo" href="index.html">[Business Name]</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Request a Quote</h2>
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <p>Tell us about your event and we'll get back to you within one business day.</p>
+          <p><strong>Phone:</strong> [Phone]</p>
+          <p><strong>Email:</strong> [Email]</p>
+          <p><strong>Service area:</strong> [City, State] and surrounding areas</p>
+        </div>
+
+        <form name="quote" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="quote">
+          <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel">
+
+          <label for="type">Event type</label>
+          <select id="type" name="event-type">
+            <option>Wedding</option>
+            <option>Corporate</option>
+            <option>Private party</option>
+            <option>Other</option>
+          </select>
+
+          <label for="date">Event date</label>
+          <input id="date" name="event-date" type="date">
+
+          <label for="guests">Estimated guests</label>
+          <input id="guests" name="guests" type="number" min="1">
+
+          <label for="details">Details</label>
+          <textarea id="details" name="details" rows="5"></textarea>
+
+          <button class="btn" type="submit">Send Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Brian's Southern Catering &middot; Colombia, SC &middot; [Phone] &middot; [Email]
+  </footer>
+</body>
+</html>
