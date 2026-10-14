@@ -51,8 +51,7 @@ a { color: var(--accent); }
   text-align: center;
   padding: 6rem 5vw 3rem;
   color: #fff;
-  /* Replace with a real photo: url("images/hero.jpg") */
-  background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), #4a3a30;
+  background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url("images/hero.png");
   background-size: cover;
   background-position: center;
 }
